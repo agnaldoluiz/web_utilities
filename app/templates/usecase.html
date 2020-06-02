@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Agnaldo Cunha, Analytics Associate">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Utilities Brasil</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='css/bootstrap.min.css')}}">
+    <!-- Favicon -->
+    <link rel="icon" href="/static/favicon.ico">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css')}}">
+
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION BAR -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Utilities Brasil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+
+		<div class="container my-5">
+			<h1> Use Case - {{ name }} </h1>
+			<div class="my-4"><img src="{{url_for('static', filename='img/case' + number + '.jpg')}}" alt='Case' role="img" width="1200" height="100%" preserveAspectRatio="xMidYMid slice"/></div>
+		</div>
+
+		<!-- FOOTER -->
+      	<footer class="mt-5 container">
+        	<p class="float-right"><a href="#">Back to top</a></p>
+        	<p>&copy; 2020 Kearney. &middot; <a href="#">Terms</a></p>
+      	</footer>
+    </main>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $('.navbar li').on('click', function(){
+        $('.navbar li').removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
+
+  </body>
+</html>
