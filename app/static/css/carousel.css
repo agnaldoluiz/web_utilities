@@ -8,14 +8,55 @@ body {
   color: #5a5a5a;
 }
 
+.navbar .navbar-brand {
+  color: rgba(120, 120, 120, 1);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: rgba(120, 120, 120, 1);
+}
+
+.navbar .navbar-nav .nav-item .active {
+    color: black;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
+
+.dpd1 {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.dpd2 {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Customize Use Cases */
+.album {
+  background-color: rgba(60, 60, 60, 1);
+}
+
+.album .container .title {
+  color: rgb(242,242,242);
+}
+
+/* Customize UPS */
+.ups {
+  background-color: rgba(60, 60, 60, 1);
+}
+
+.ups h2, p {
+  color: rgb(242,242,242);
+  padding-bottom: 2rem;
+}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -37,13 +78,6 @@ body {
   height: 32rem;
 }
 
-/* USE CASES
--------------------------------------------------- */
-.usecases-title {
-  margin-bottom: 4rem;
-  margin-left: 0.4rem;
-}
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -62,7 +96,7 @@ body {
 }
 
 .marketing-title {
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 3rem;
 }
 
@@ -80,7 +114,6 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -104,4 +137,8 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+html {
+  scroll-padding-top: 70px; /* height of sticky header */
 }

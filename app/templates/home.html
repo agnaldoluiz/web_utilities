@@ -3,11 +3,11 @@
 
 <!-- Carousel 
 ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="home" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2" id="usecases"></li>
+    <li data-target="#home" data-slide-to="0" class="active"></li>
+    <li data-target="#home" data-slide-to="1"></li>
+    <li data-target="#home" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
     <!-- Carousel #1 -->
@@ -16,9 +16,9 @@
       <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
       <div class="container">
         <div class="carousel-caption text-left">
-          <h1>Example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          <h1>Download our 2017 Utilities Performance Scan</h1>
+          <p>Every three years, Kearney creates a benchmark among electricity distributors based on ANEEL data. Download it here</p>
+          <p><a class="btn btn-lg btn-dark" href="#" role="button">Download</a></p>
         </div>
       </div>
     </div>
@@ -28,9 +28,9 @@
       <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
       <div class="container">
         <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          <h1>News 1</h1>
+          <p>Notícias sobre o setor elétrico - Colocar aqui headline principal da notícia com resumo. Link guiará para página da notícia (link externo)</p>
+          <p><a class="btn btn-lg btn-dark" href="#" role="button">Learn more</a></p>
         </div>
       </div>
     </div>
@@ -42,16 +42,16 @@
         <div class="carousel-caption text-right">
           <h1>One more for good measure.</h1>
           <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          <p><a class="btn btn-lg btn-dark" href="#" role="button">Browse gallery</a></p>
         </div>
       </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#home" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#home" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -60,12 +60,14 @@
 <!-- Use Cases
 ================================================== -->      
 
-<div class="album py-5 bg-light">
+<div class="album pt-4" id="usecases">
   <div class="container">
-    <h2 class="usecases-title">Use Cases</h2>
+    <h2 id="usecases" class="title">Use Cases</h2>
+    <hr />
+    <h3 id="baddebts" class="title pb-4">Bad Debts</h3>
     <div class="row">
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
           <div><img src='static/img/usecase1.jpg' class="img-responsive" height="225" width="100%" preserveAspectRatio="xMidyMid slice"/></div>
           <div class="card-body">
@@ -82,7 +84,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
           <div><img src='static/img/usecase2.jpg' width="100%" height="225"/></div>
           <div class="card-body">
@@ -98,7 +100,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
           <div><img src='static/img/usecase3.jpg' width="100%" height="225"/></div>
           <div class="card-body">
@@ -114,7 +116,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
           <div><img src='static/img/usecase4.jpg' class="img-responsive" width="100%" height="225" preserveAspectRatio="xMidyMid slice"/></div>
           <div class="card-body">
@@ -130,7 +132,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
           <div class="card-body">
@@ -145,7 +147,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
           <div class="card-body">
@@ -154,7 +156,7 @@
               <div class="btn-group">
                 <button type="button" class="btn btn-md btn-outline-secondary">View</button>
               </div>
-              <small id="team" class="text-muted">9 mins</small>
+              <small class="text-muted">9 mins</small>
             </div>
           </div>
         </div>
@@ -168,7 +170,7 @@
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<div class="container marketing">
+<div id="team" class="container marketing pt-4">
 
   <!-- Three columns of text below the carousel -->
   <h2 class="marketing-title">Meet the Team</h2>
@@ -239,6 +241,20 @@
   <!-- /END THE FEATURETTES -->
 
 </div><!-- /.container -->
+
+<div class="ups pt-4" id="ups">
+  <div class="container">
+    <h2 class="ups-title">Utilities Performance Scan</h2>
+    <p class="ups-content">
+      O “2017 Utilities Performance Scan” contempla a análise do desempenho das 27 grandes Distribuidoras no ano fiscal de 2017. Esse ano o estudo conta com a novidade de ter uma evolução dos indicadores no período 2015-2017.
+      
+      A elaboração desse estudo exigiu a coleta, tratamento, padronizaçãp e análise de milhares de dados de todos os relatórios anuais das empresas e relatórios das revisões e reajustes tarifários da ANEEL. Foi realizado de forma independente e sem acesso a executivos das empresas.
+    </p>
+    <p><a href="/static/pdf/UPS_ATKearney.pdf" download class="btn btn-lg btn-light" role="button"><svg class="bi bi-download" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M.5 8a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.5A.5.5 0 0 1 .5 8z"/><path fill-rule="evenodd" d="M5 7.5a.5.5 0 0 1 .707 0L8 9.793 10.293 7.5a.5.5 0 1 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5 8.207A.5.5 0 0 1 5 7.5z"/><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 1z"/></svg> Download Now</a>
+    </p>
+    <br />
+  </div>
+</div>
 
 {% endblock %}
       

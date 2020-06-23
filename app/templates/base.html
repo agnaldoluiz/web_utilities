@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Agnaldo Cunha, Analytics Associate">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>Utilities Brasil</title>
+    <title>Brazil Energy</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='css/bootstrap.min.css')}}">
@@ -29,26 +29,42 @@
         }
       }
     </style>
+
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css')}}">
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="80">
     <header>
       <!-- NAVIGATION BAR -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Utilities Brasil</a>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #ffffff;">
+        <img src='/static/img/kearney_logo.png' class="mr-2" height="13.5" width="100" />
+
+        <!-- <iframe src="/static/img/Kearney_logo.svg">
+          Your browser does not support iframes
+        </iframe> -->
+        
+        <a class="navbar-brand ml-2" href="#">Brazil Energy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#usecases">Use Cases</a>
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link dpd1" href="#usecases">Use Cases</a>
+          </li>
+          <li class="nav-item dropdown dpd2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#baddebts">Bad Debts</a>
+              <a class="dropdown-item" href="#">Commercial Losses</a>
+            </div>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#team">Team</a>
           </li>
@@ -56,6 +72,10 @@
             <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Technologies</a> -->
             <a class="nav-link" href="#technologies">Technologies</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ups">Utilities Performance Scan</a>
+          </li>
+
         </ul>
         </div>
       </nav>
@@ -74,12 +94,12 @@
     <script src="/static/js/jquery-latest.js"></script>
     <script src="/static/js/bootstrap.bundle.min.js"></script>
 
-    <script>
+    <!--<script>
       $('.navbar li').on('click', function(){
         $('.navbar li').removeClass('active');
         $(this).addClass('active');
       });
-    </script>
+    </script> -->
 
   </body>
 </html>
