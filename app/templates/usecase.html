@@ -50,11 +50,22 @@
         </div>
       </nav>
     </header>
+
     <main role="main">
 
 		<div class="container my-5">
-			<h1> Use Case - {{ name }} </h1>
-			<div class="my-4"><img src="{{url_for('static', filename='img/case' + number + '.jpg')}}" alt='Case' role="img" width="1200" height="100%" preserveAspectRatio="xMidYMid slice"/></div>
+			
+      <h1> Use Case - {{ name }} </h1>
+			<div class="my-4">
+        <img src="{{url_for('static', filename='img/case' + number + '.jpg')}}" alt='Case' role="img" width="1100" height="100%" preserveAspectRatio="xMidYMid slice"/>
+      </div>
+
+      <h1> Usecase example video </h1>  
+      <div class="my-4">
+        <video controls poster="{{url_for('static', filename='vid/poster' + number + '.jpg')}}"  width="1100" height="100%" alt="video" preserveAspectRatio="xMidYMid slice">
+          <source src="{{url_for('static', filename='vid/case' + number + '.mp4')}}" > </video>
+      </div>
+
 		</div>
 
 		<!-- FOOTER -->
