@@ -1,12 +1,13 @@
 from flask import render_template, flash, redirect, url_for, request
 from app import app
 from app.forms import LoginForm
-import sqlite3
+# import sqlite3
 import pandas as pd
 
-conn = sqlite3.connect('contacts.db')
-contacts = pd.read_sql_query("SELECT * from contacts", conn)
-email_senha = pd.Series(contacts.senha.values, index=contacts.email).to_dict()
+# conn = sqlite3.connect('contacts.db')
+# contacts = pd.read_sql_query("SELECT * from contacts", conn)
+# email_senha = pd.Series(contacts.senha.values, index=contacts.email).to_dict()
+email_senha = {'agnaldo.cunha@kearney.com': '9E%He7', 'claudio.goncalves@kearney.com': 'E8n*2d'}
 #from flask_login import current_user, login_user
 
 @app.route('/', methods=['GET', 'POST'])
