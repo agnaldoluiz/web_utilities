@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Agnaldo Cunha, Analytics Associate">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Energy Digital Lab</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='css/bootstrap.min.css')}}">
+    <!-- Favicon -->
+    <link rel="icon" href="static/favicon.ico">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .card-text{
+        color: grey;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css')}}">
+
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION BAR -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #ffffff;">
+        <a href='https://www.kearney.com/'><img src='/static/img/kearney_logo.png' class="mr-2" height="13.5" width="100" /></a>
+        
+        <a class="navbar-brand ml-2" href="{{url_for('index')}}">Energy Digital Lab</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main role="main">
+
+		<div class="container my-5">
+			<h1>Utilities Performance Scan</h1>
+			<h2> Power BI </h2>
+			<br />
+			<br />
+
+			<iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=404358f8-60db-4b5a-ba54-52fab55519ad&autoAuth=true&ctid=5dc645ed-297f-4dca-b0af-2339c71c5388&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLW5vcnRoLWNlbnRyYWwtZS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+
+		</div>
+
+		<!-- FOOTER -->
+	    <footer class="mt-5 container">
+	      	<p class="float-right"><a href="#">Back to top</a></p>
+	       	<p>&copy; 2020 Kearney. &middot; <a href="#">Terms</a></p>
+	    </footer>
+    
+    </main>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="/static/js/jquery-latest.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $('.navbar li').on('click', function(){
+        $('.navbar li').removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
+
+  </body>
+</html>

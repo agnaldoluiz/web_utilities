@@ -20,6 +20,10 @@ body {
     color: black;
 }
 
+.navbar .navbar-brand a, a:focus, a:hover {
+  color: black !important;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
