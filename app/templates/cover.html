@@ -54,9 +54,10 @@
         </div>
       </header>
 
+
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Energy Digital Lab</h1>
-        <p class="lead">Kearney Brazil Energy Digital Lab: user cases, benchmarks, sector news and more. </p>
+        <p class="lead">Kearney Brazil Energy Digital Lab: user cases, benchmarks, sector news and more. Here you'll find access to our Utilities Performance Scan 2020 report in the Power BI format.<br />Please login below with your <b>e-mail</b> and <b>password</b></p>
         <p class="lead">
           <form action="" method="post" class="form-inline my-4 mt-md-0 justify-content-center">
               {{ form.hidden_tag() }}
@@ -69,15 +70,62 @@
             </p><br />
             <p>{{ form.submit() }}</p>
           </form>
+
+          <!-- Modal WTF -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 style="color: black;">Register</h1>
+                  <input class="btn" data-dismiss="modal" value="Close">
+                </div>
+                <div class="modal-body">
+                  <form action="" method="post" class="form-inline my-4 mt-md-0 justify-content-center">
+                  {{ rform.hidden_tag() }}
+                  <p style="color: black;">
+                    {{ rform.email.label }}<br>
+                    {{ rform.email(size=32) }}<br>
+                    {% for error in rform.email.errors %}
+                      <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                  </p>
+                  <p style="color: black;">
+                    {{ rform.password.label }}<br>
+                    {{ rform.password(size=32) }}<br>
+                    {% for error in rform.password.errors %}
+                      <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                  </p>
+                  <p style="color: black;">
+                    {{ rform.password2.label }}<br>
+                    {{ rform.password2(size=32) }}<br>
+                    {% for error in rform.password2.errors %}
+                      <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                  </p>
+
+                  <br />
+                  <p>{{ rform.submit() }}</p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" data-toggle="modal" data-target="#myModal">First time login</a>
+
         </p>
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
           <p>Website by <a href="https://www.kearney.com/">Kearney</a>, São Paulo, Brazil.</p>
-          <p>Send us an <a href="mailto:claudio.goncalves@kearney.com">e-mail</a> for the password</p>
+          <p>Send us an <a href="mailto:diogo.cunha@kearney.com">e-mail</a> for the 10-day free access</p>
         </div>
       </footer>
     </div>
+
+    <script src="/static/js/jquery-latest.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
