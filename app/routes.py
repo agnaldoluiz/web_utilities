@@ -61,12 +61,12 @@ def index():
             flash('Your 10-day free trial is expired. Send an e-mail to diogo.cunha@kearney.com to get info about how to get a new permission')
             return redirect(url_for('index'))
         
-        login_user(user, remember=True)
+        login_user(user, remember=False)
 
-        next_page = request.args.get('next')
-        if not next_page or url_parse(next_page).netloc != '':
-            next_page = url_for('ups')
-        return redirect(next_page)
+        #next_page = request.args.get('next')
+        #if not next_page or url_parse(next_page).netloc != '':
+        #    next_page = url_for('ups')
+        return redirect(url_for('ups'))
 
     return render_template('cover.html', form=form, rform=rform)
 
@@ -79,6 +79,14 @@ def ups():
     # email = current_user.email
     # date= access[access.Email == email].DataFim.iloc[0]
     user = current_user.email
+
+    access = pd.read_csv(URL)
+    access['DataFim'] = pd.to_datetime(access['DataFim'], errors='coerce')
+
+    if ((access[access.Email == email].AcessoConstante.iloc[0] == False) & ((access[access.Email == email].DataFim.iloc[0] + timedelta(days=1) > today) == False)):
+        flash('Your 10-day free trial is expired. Send an e-mail to diogo.cunha@kearney.com to get info about how to get a new permission')
+        return redirect(url_for('index'))
+
     return render_template('ups.html', user=user)
 
 @app.route('/home', methods=['GET', 'POST'])
