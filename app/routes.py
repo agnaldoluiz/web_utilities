@@ -73,12 +73,8 @@ def index():
 @app.route('/ups', methods=['GET', 'POST'])
 @login_required
 def ups():
-    # access = pd.read_csv(URL)
-    # access['DataInicio'] = pd.to_datetime(access['DataInicio'], errors='coerce')
-    # access['DataFim'] = pd.to_datetime(access['DataFim'], errors='coerce')
-    # email = current_user.email
-    # date= access[access.Email == email].DataFim.iloc[0]
-    user = current_user.email
+    today = datetime.now()
+    email = current_user.email
 
     access = pd.read_csv(URL)
     access['DataFim'] = pd.to_datetime(access['DataFim'], errors='coerce')
@@ -87,7 +83,7 @@ def ups():
         flash('Your 10-day free trial is expired. Send an e-mail to diogo.cunha@kearney.com to get info about how to get a new permission')
         return redirect(url_for('index'))
 
-    return render_template('ups.html', user=user)
+    return render_template('ups.html', user=email)
 
 @app.route('/home', methods=['GET', 'POST'])
 @login_required
